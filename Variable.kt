@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
 	// var: mutable variable
 	var n = 10
 	n= 15
