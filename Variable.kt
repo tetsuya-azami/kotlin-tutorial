@@ -13,4 +13,25 @@ fun main() {
 	var x: Int
 	x = 10
 	println(x)
+
+	// type suffix
+	val y = 1L;
+	val z = 1F;
+	println(y::class)
+	println(z::class)
+
+	// escaped string and raw string
+	val s = "Hello, \n\"Kotlin\""
+	println(s)
+	val r = """
+		|Hello,
+		|"Kotlin"
+	""".trimMargin()
+	println(r)
+
+	// string template
+	val data = arrayOf(1, 2, 3, "hoge")
+	println("data=${data.joinToString(",")}")
+	println("data[0] = ${data[0]}")
+	println("1+1=${1+1}")
 }
